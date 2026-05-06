@@ -97,8 +97,7 @@ function updateNavbar(scrollTop) {
 
 function updateScenes(fraction) {
     const scenes = document.querySelectorAll('.scene');
-    // Math for 6 scenes across 0 to 1
-    const step = 0.16; // 1 / 6
+    const step = 1 / scenes.length; 
     scenes.forEach((scene, index) => {
         const start = index * step;
         const end = start + step;
